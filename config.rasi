@@ -1,0 +1,4 @@
+@theme "/usr/share/rofi/themes/DarkBlue.rasi"
+configuration {
+ font: "Cascadia Mono PL 12.5";
+}
