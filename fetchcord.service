@@ -5,7 +5,7 @@ After=network.target multi-user.target graphical-session.target
 
 [Service]
 Environment=PYTHONUNBUFFERED=1
-ExecStart=-/home/jared/.pyenv/versions/fetchcord/bin/fetchcord --nohardware --noshell --fetchcord-config-path /home/jared/.config/fetchcord/fetchcord.conf
+ExecStart=-/home/jared/.pyenv/versions/fetchcord/bin/fetchcord --nohardware --noshell --nohost --fetchcord-config-path /home/jared/.config/fetchcord/fetchcord.conf
 Restart=always
 RestartSec=10
 
