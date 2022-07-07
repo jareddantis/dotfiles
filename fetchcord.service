@@ -1,0 +1,13 @@
+[Unit]
+Description=Display OS info as Discord Rich Presence
+Documentation=https://github.com/MrPotatoBobx/FetchCord
+After=network.target multi-user.target graphical-session.target
+
+[Service]
+Environment=PYTHONUNBUFFERED=1
+ExecStart=-/home/jared/.pyenv/versions/fetchcord/bin/fetchcord --nohost --nohardware --noshell
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
