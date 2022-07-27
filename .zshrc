@@ -109,3 +109,6 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# Alias for clearing window and scrollback buffer
+alias cls="clear && printf '\e[3J'"
+
