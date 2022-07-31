@@ -1,0 +1,3 @@
+#!/bin/bash
+# Reboot to Windows
+sudo efibootmgr -n 0000 && sudo systemctl reboot
